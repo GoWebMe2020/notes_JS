@@ -32,3 +32,5 @@
 #### Local Branch
 
 * It is recommended that you delete your local branch (git branch -d < branch name >)
+
+# This is added to test the merge function.
