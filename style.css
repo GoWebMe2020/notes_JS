@@ -1,0 +1,48 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-board {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+  min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1517585867778-99d673b3a6c1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80");
+}
+
+.cards {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.card {
+  font-family: 'Indie Flower', cursive;
+  width: 270px;
+  height: 270px;
+  margin: 25px;
+  background: radial-gradient(rgb(255, 255, 136), rgb(255, 255, 0));
+  transform: translate(0px, 0px) rotate(-8deg);
+  -webkit-box-shadow: 12px 12px 21px 6px rgba(0,0,0,0.8); 
+  box-shadow: 12px 12px 21px 6px rgba(0,0,0,0.8);
+  /* background-image: url('images/post-it.png'); */
+  /* https://www.101computing.net/wp/wp-content/uploads/post-it.jpg URL for original post-it image */
+  
+}
+
+.card-title {
+  text-align: center;
+  padding: 50px 50px 10px 50px;
+  font-size: 25px;
+  transform: translate(0px, 0px) rotate(8deg);
+  
+}
+
+.card-note {
+  text-align: center;
+  padding: 10px 50px 50px 50px;
+  font-size: 20px;
+  transform: translate(0px, 0px) rotate(8deg);
+}
