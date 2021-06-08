@@ -28,7 +28,9 @@ Finally, why not deploy your app?
 
 ## Build Status
 
-* Initially created the repo, added collaborators and created the README
+* Initially created the repo, added collaborators and created the README.
+* Local storage has now been implemented.
+* Notes can be added and deleted.
 
 ## Code style
 
