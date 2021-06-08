@@ -16,11 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const key = noteTitle.value;
     const value = noteValue.value;
     notes.add(key, value);
+    location.reload();
   };
   // This deletes a note.
   deleteBtn.onclick = () => {
     const key = notesList.value;
     notes.deleteNote(key);
+    location.reload();
   };
   // This displays all the notes showing only 20 charaters.
   notes.displayAllNotes();

@@ -1,7 +1,13 @@
-it('2+2 equals 4', function() {
-  expect(2+2).toEqual(4);
-});
+let notes = new Notes();
 
-it('2+2 equals 5', function() {
-  expect(2+2).toEqual(5);
+it("can add a note", function() {
+  notes.add("hello", "my name is willoughby");
+  expect(localStorage.length > 0).toEqual(true);
+})
+
+it("can delete a note", function() {
+  notes.add("Hello", "my name is JP");
+  storageLength = localStorage.length;
+  notes.deleteNote("Hello");
+  expect(localStorage.length == storageLength).toEqual(false);
 })
