@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Notes</title>
+</head>
+<body>
+
+  <fieldset>
+    <legend>Insert Data</legend>
+    <input id="noteTitle" type="text" placeholder="Note Title" required>
+    <input id="noteValue" type="text" placeholder="Note" required>
+    <button type="button" id="saveBtn">Save Note</button>
+  </fieldset>
+
+  <fieldset>
+    <legend>Delete Data</legend>
+    <form>
+      <select name="notesList" id="notesList">
+
+      </select>
+      <button type="button" id="deleteBtn">Delete Items</button>
+    </form>
+    
+  </fieldset>
+
+  <fieldset>
+    <legend>Local Storage</legend>
+
+    <div id="localStorgeOutput" class="cards">
+      
+    </div>
+  </fieldset>
+
+  <script src="interface.js"></script>
+  <script src="./lib/notes.js"></script>
+</body>
+</html>
