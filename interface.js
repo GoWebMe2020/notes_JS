@@ -29,5 +29,21 @@ document.addEventListener("DOMContentLoaded", () => {
   // This places the note headings in the selection box for deletion.
   notes.notesSelection();
 
+  // note selection
+  window.addEventListener("hashchange", noteSelect);
+
+  function noteSelect() {
+    return showNote(getNoteKeyFromUrl(window.location));
+  }
+
+  function getNoteKeyFromUrl(location) {
+    return location.hash.split("#")[1];
+  }
+
+  function showNote(key) {
+    const value = localStorage.getItem(key);
+    document.getElementById("selected-note").innerHTML += `<div class="card"><h2 class="card-title">${key}</h2><p class="card-note">${value}</p></div>`
+  }
+
 });
 
