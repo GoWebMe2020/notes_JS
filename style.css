@@ -75,6 +75,10 @@ fieldset {
   transform: translate(0px, 0px) rotate(-8deg);
   /* -webkit-box-shadow: 12px 12px 21px 6px rgba(0,0,0,0.8); 
   box-shadow: 12px 12px 21px 6px rgba(0,0,0,0.8); */
+  background: radial-gradient(rgb(255, 255, 136), rgb(255, 255, 0));
+  transform: translate(0px, 0px) rotate(-8deg);
+  -webkit-box-shadow: 12px 12px 21px 6px rgba(0,0,0,0.8); 
+  box-shadow: 12px 12px 21px 6px rgba(0,0,0,0.8);
   /* background-image: url('images/post-it.png'); */
   /* https://www.101computing.net/wp/wp-content/uploads/post-it.jpg URL for original post-it image */
   
@@ -86,7 +90,6 @@ fieldset {
   font-size: 30px;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
   /* transform: translate(0px, 0px) rotate(8deg); */
-  
 }
 
 .card-note {
@@ -109,4 +112,7 @@ fieldset {
 
 .open:hover {
   transform: translate(0px, 0px) rotate(360deg);
+  padding: 10px 50px 50px 50px;
+  font-size: 20px;
+  transform: translate(0px, 0px) rotate(8deg);
 }
