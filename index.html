@@ -9,40 +9,46 @@
   <script src="https://kit.fontawesome.com/15ed7b8e2c.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="style.css">
+  <script src="interface.js"></script>
   <title>Notes</title>
 </head>
 <body>
 
-  <div class="add-delete">
-    <fieldset class="add">
-      <legend>Add a New Note</legend>
-      <input id="noteTitle" type="text" placeholder="Note Title" required>
-      <textarea id="noteValue" type="text" placeholder="Note" required></textarea>
-      <button type="button" id="saveBtn"><i class="far fa-share-square"></i></button>
-    </fieldset>
-  
-    <fieldset class="delete">
-      <legend>Delete a Note</legend>
-      <form>
-        <select name="notesList" id="notesList">
-          <option value="">Select a note by it's title</option>
-        </select>
-        <button type="button" id="deleteBtn"><i class="fas fa-trash-alt"></i></button>
-      </form>
-    </fieldset>
-  </div>
-
-  <fieldset>
-    <legend>Local Storage</legend>
     <div class="card-board">
-      <div id="localStorgeOutput" class="cards">
       
+      <div id="noteSpace" class="noteDisappear">
+        <div id="wholeNote">
+          <h3 id="note"></h3>
+          
+        </div>
+        <i id="closeNote" class="fas fa-times"></i>
       </div>
-    </div>
-    
-  </fieldset>
 
-  <script src="interface.js"></script>
+      <div class="add-delete">
+        <fieldset class="add">
+          <h3>Add a Note</h3>
+          <input id="noteTitle" type="text" placeholder="Note Title" required>
+          <textarea id="noteValue" type="text" placeholder="Note" required></textarea>
+          <button type="button" id="saveBtn"><i class="far fa-share-square"></i></button>
+          <div class="delete">
+            <h3>Delete a Note</h3>
+              <select name="notesList" id="notesList">
+                <option value="">Select a note by it's title</option>
+              </select>
+              <button type="button" id="deleteBtn"><i class="far fa-trash-alt"></i></button>
+          </div>
+        </fieldset>
+      
+        
+      </div>
+        <div id="localStorgeOutput" class="cards">
+        
+        </div>
+      </div>
+
+  <script src="./lib/localstorage.js"></script>
   <script src="./lib/notes.js"></script>
+  <script src="./lib/displaynote.js"></script>
+
 </body>
 </html>
