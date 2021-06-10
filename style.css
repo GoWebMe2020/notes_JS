@@ -21,6 +21,18 @@ body {
   background-attachment: fixed;
 }
 
+.card-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px 0;
+  background-image: url("https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .add-delete {
   display: flex;
   justify-content: center;
@@ -106,6 +118,8 @@ button {
 select {
   font-size: 20px;
   padding: 15px;
+  font-size: 17px;
+  padding: 1em 10em;
   margin: 10px;
   width: 90%;
   background-color: rgba(136, 136, 136, 0.411);
@@ -113,7 +127,6 @@ select {
   outline: none;
   border-radius: 10px;
   border: none;
-
 }
 
 #deleteBtn {
