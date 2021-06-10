@@ -1,10 +1,24 @@
 * {
   padding: 0;
   margin: 0;
+  transition: 0.3s;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  
+}
+
+.card-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px 0;
+  background-image: url("https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .card-board {
@@ -28,6 +42,7 @@ body {
 
 fieldset {
   border-radius: 10px;
+  padding: 10px;
 }
 
 .add {
@@ -52,6 +67,7 @@ fieldset {
   border: none;
   outline: none;
   font-size: 20px;
+  padding: 15px;
 }
 
 .add textarea {
@@ -64,6 +80,7 @@ fieldset {
   border: none;
   outline: none;
   font-size: 20px;
+  padding: 15px;
 }
 
 .add textarea::placeholder{
@@ -83,6 +100,10 @@ button {
   text-shadow: 1px 1px 2px rgba(72, 255, 0, 0.8);
 }
 
+#saveBtn:hover {
+  transform: translate(0px, 0px) rotate(360deg) scale(1.5);
+}
+
 .delete {
   display: flex;
   flex-direction: column;
@@ -95,6 +116,8 @@ button {
 }
 
 select {
+  font-size: 20px;
+  padding: 15px;
   font-size: 17px;
   padding: 1em 10em;
   margin: 10px;
@@ -104,12 +127,15 @@ select {
   outline: none;
   border-radius: 10px;
   border: none;
-
 }
 
 #deleteBtn {
   color: rgba(255, 0, 0, 0);
   text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.8);
+}
+
+#deleteBtn:hover {
+  transform: translate(0px, 0px) rotate(360deg) scale(1.5);
 }
 
 .cards {
@@ -158,8 +184,7 @@ select {
 }
 
 .open:hover {
-  transform: translate(0px, 0px) rotate(360deg);
-  font-size: 35px;
+  transform: translate(0px, 0px) rotate(360deg) scale(1.5);
 }
 
 /* NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE */
