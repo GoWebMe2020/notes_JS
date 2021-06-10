@@ -1,33 +1,52 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", () => {
-
+  
   const noteTitle = document.getElementById("noteTitle");
   const noteValue = document.getElementById("noteValue");
   const saveBtn = document.getElementById("saveBtn");
-  const localStorgeOutput = document.getElementById("localStorgeOutput");
   const notesList = document.getElementById("notesList");
   const deleteBtn = document.getElementById("deleteBtn");
+  const closeNote = document.getElementById("closeNote");
+  const noteSpace = document.getElementById('noteSpace');
 
   let notes = new Notes();
+  let lS = new LocalStorage();
+  let displayNote= new DisplayNote();
+
+  // This displays all the notes showing only 20 charaters.
+  lS.displayAllNotes();
+
+  const openNote = document.getElementsByTagName("a");
 
   // This saves a note.
   saveBtn.onclick = () => {
     const key = noteTitle.value;
     const value = noteValue.value;
-    notes.add(key, value);
+    notes.create(key, value);
     location.reload();
   };
+
   // This deletes a note.
   deleteBtn.onclick = () => {
     const key = notesList.value;
     notes.deleteNote(key);
     location.reload();
   };
-  // This displays all the notes showing only 20 charaters.
-  notes.displayAllNotes();
+
+  closeNote.onclick = () => {
+    document.querySelector('#noteSpace').className = "noteDisappear"
+  };
+
+  for(let i = 0; i < openNote.length; i++) {
+    openNote[i].onclick = () => {
+      document.querySelector('#noteSpace').className = "appear"
+      displayNote.makeUrlChangeShowNoteForCurrentPage()
+    };
+  }
+
   // This places the note headings in the selection box for deletion.
-  notes.notesSelection();
+  lS.notesSelectForDelete();
 
 });
 
