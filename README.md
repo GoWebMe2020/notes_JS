@@ -24,8 +24,6 @@ As a programmer<br>
 I can refresh the page and still see my notes<br>
 So I can remember what I took down<br>
 
-Finally, why not deploy your app?
-
 ## Build Status
 
 * Initially created the repo, added collaborators and created the README.
@@ -34,40 +32,32 @@ Finally, why not deploy your app?
 
 ## Code style
 
-The first day of the project was spent on planning.
 * CRC cards to determine the classes and responsibilities
 * All notes will be stored locally. Local storage must be researched
 * No testing frame work will be used. Test will be written using vanilla JavaScript
 
-
 ## Installation
 
-
+* Open the HTML in your browser.
 
 ## Tests
 
-
+* It tests the Emojify, DisplayNote and Notes classes.
 
 ## Technology Used / Dependencies
+
+* HTML
+* JavaScript
+* CSS
 
 #### Software
 
 * VS Code
 * Zoom
 
-#### Languages
-
-* HTML
-* CSS
-* JavaScript
-
-#### Dependencies
-
-
-
 ## Screenshots
 
-
+<img src="./images/notes1.png" width="48%"><img src="./images/notes2.png" width="48%">
 
 ## Credits
 
